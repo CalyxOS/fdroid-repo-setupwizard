@@ -1,0 +1,26 @@
+
+repo_url: file:///product/fdroid/repo
+repo_name: CalyxOS Local Repository
+repo_description: |
+  This is a repository of apps to be used with CalyxOS. Applications
+  in this repository are either official binaries built by the
+  original application developers, or are binaries built from source
+  by the developers of calyxos.org using the tools on
+  https://gitlab.com/fdroid.
+
+# enable the archive to enforce a single APK per app, its not deployed anywhere
+archive_older: 1
+archive_url: file:///product/fdroid/archive
+archive_name: CalyxOS Local Repository Archive
+archive_description: |
+  Archived apps that are no longer available in the on-device repo.
+
+make_current_version_link: false
+
+# plugins/fdroid_ersatz-update.py handles the APK dates
+update_stats: false
+
+deploy_process_logs: true
+
+keystore: NONE
+keystorepass: {env: keystorepass}
