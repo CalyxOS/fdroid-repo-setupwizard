@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fd1b67d_add27c76",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-05T12:28:35Z",
+      "side": 1,
+      "message": "For the issues,\n\nWe use the format:\n\nIssue: calyxos#489",
+      "revId": "1a6bdad4c3654d33dadc33002ded2e75cac2141e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a2aa617_8f50430f",
+        "filename": "metadata/com.nextcloud.client.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-05T12:28:35Z",
+      "side": 1,
+      "message": "This is not Default.\n\nIt\u0027s included to allow SeedVault restore entirely offline, otherwise it isn\u0027t installed by default unless you choose to.",
+      "revId": "1a6bdad4c3654d33dadc33002ded2e75cac2141e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
