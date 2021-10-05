@@ -3,6 +3,40 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "0a53bf1e_a94b2407",
+        "filename": "config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-05T12:35:18Z",
+      "side": 1,
+      "message": "Does this mean the repo will only have the latest apk? That\u0027s the intention.",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b28acb6_59e749ff",
+        "filename": "config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-05T12:35:18Z",
+      "side": 1,
+      "message": "This does not exist.",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "302eb85c_42b0982c",
         "filename": "plugins/fdroid_ersatz-update.py",
         "patchSetId": 1
