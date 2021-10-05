@@ -25,3 +25,4 @@ __pycache__
 /metadata/*/*/featureGraphic.*
 /metadata/*/*/icon.png
 /metadata/*/*/summary.txt
+/stats/known_apks.txt
