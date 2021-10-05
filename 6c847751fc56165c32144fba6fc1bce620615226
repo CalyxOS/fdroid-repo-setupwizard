@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be7a5d3f_e6d7079a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-05T12:30:57Z",
+      "side": 1,
+      "message": "Should rebase and remove this duplicate.",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00a746ff_5b81e239",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-05T12:30:57Z",
+      "side": 1,
+      "message": "Issue: calyxos#490",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1dc8f4fd_03bf3a2c",
+        "filename": "check-signal.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-05T12:30:57Z",
+      "side": 1,
+      "message": "We should put the script in a common repo, I created \u0027scripts-fdroid-repo\u0027 for this.\n\nSignal is in this setupwizard repo, and we also need it to the common repo since it\u0027s the one app that\u0027s not in any other repositories, so that\u0027d be the way to get updates.\n\nAnd it\u0027d make sense to not duplicate the scripts to avoid the issue last time where for one change to the script you\u0027d have to update multiple repos.\n\n\nAlso, it\u0027d be useful to have a generic download.py to avoid duplicating the same code in all of the scripts, at least download_file()",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
