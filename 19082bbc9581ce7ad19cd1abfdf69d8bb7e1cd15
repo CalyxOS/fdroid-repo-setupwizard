@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "302eb85c_42b0982c",
+        "filename": "plugins/fdroid_ersatz-update.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-05T12:31:33Z",
+      "side": 1,
+      "message": "What\u0027s this for? So far we\u0027ve got Briar directly from F-Droid.",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
