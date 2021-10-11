@@ -33,6 +33,24 @@
       "message": "This is not Default.\n\nIt\u0027s included to allow SeedVault restore entirely offline, otherwise it isn\u0027t installed by default unless you choose to.",
       "revId": "1a6bdad4c3654d33dadc33002ded2e75cac2141e",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6ee6ba6_848c7d40",
+        "filename": "metadata/com.nextcloud.client.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-11T16:58:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a2aa617_8f50430f",
+      "revId": "1a6bdad4c3654d33dadc33002ded2e75cac2141e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
