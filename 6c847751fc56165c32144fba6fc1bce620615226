@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "53942b89_f52e5ea4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-10-14T11:28:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "be7a5d3f_e6d7079a",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "00a746ff_5b81e239",
@@ -35,6 +53,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8867eafb_0110e7f9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-10-14T11:28:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "00a746ff_5b81e239",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1dc8f4fd_03bf3a2c",
@@ -48,6 +84,24 @@
       "writtenOn": "2021-10-05T12:30:57Z",
       "side": 1,
       "message": "We should put the script in a common repo, I created \u0027scripts-fdroid-repo\u0027 for this.\n\nSignal is in this setupwizard repo, and we also need it to the common repo since it\u0027s the one app that\u0027s not in any other repositories, so that\u0027d be the way to get updates.\n\nAnd it\u0027d make sense to not duplicate the scripts to avoid the issue last time where for one change to the script you\u0027d have to update multiple repos.\n\n\nAlso, it\u0027d be useful to have a generic download.py to avoid duplicating the same code in all of the scripts, at least download_file()",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "935e6776_4810e51a",
+        "filename": "check-signal.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-10-14T11:28:25Z",
+      "side": 1,
+      "message": "I agree we should share code when its used in multiple places.  Right now, Signal isn\u0027t shared, that\u0027s why it is here.  The download function is too trivial to require a whole code sharing infrastructure, but it would be fine to move it there once that exists.\n\nHaving the same app in multiple repos is something that should be avoided, if possible.  It will make for confusing interactions related to repo priority.  As long as Signal isn\u0027t currently urgently needed in another repo, it\u0027ll be easier to only keep it here.  Then we can move towards making fdroid-repo-setupwizard a live repo that has proper support for a local offline mirror.  That will mean that fdroid-repo-setupwizard would be built on fully supported configurations rather than CalyxOS-specific hacks.  The F-Droid side of that work is funded and being scheduled now.",
+      "parentUuid": "1dc8f4fd_03bf3a2c",
       "revId": "6c847751fc56165c32144fba6fc1bce620615226",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
