@@ -104,6 +104,24 @@
       "parentUuid": "1dc8f4fd_03bf3a2c",
       "revId": "6c847751fc56165c32144fba6fc1bce620615226",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b88249a_7b5b2158",
+        "filename": "check-signal.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-14T11:31:37Z",
+      "side": 1,
+      "message": "Signal is shared.\n\nThis repo is bundled with the OS, and only updated when the OS updates.\n\nWe need to have it in fdroid-repo-common so that users actually receive updates on time, outside of OS updates.\n\nWe\u0027d be adding both repos to the device and thus are able to control the priority and can avoid any issues around that right away.\n\n\nI don\u0027t want to rely on mirror logic for this repo, this isn\u0027t used in fdroidclient mainly but rather in SetupWizard which has a minimal f-droid repo parser that reads this.",
+      "parentUuid": "935e6776_4810e51a",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
