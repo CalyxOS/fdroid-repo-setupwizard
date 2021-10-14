@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "399debe7_6e2d4dfd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-14T11:34:23Z",
+      "side": 1,
+      "message": "Could this be python too?\n\nIt\u0027d be good to have some consistency now that we\u0027re re-doing things entirely, and we can share it as well.",
+      "revId": "8e3b39c2857827133ef80a05832f45d005ff8f66",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
