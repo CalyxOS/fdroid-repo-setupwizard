@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8736d8a3_458ffc4f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-14T11:34:52Z",
+      "side": 1,
+      "message": "Signal is also in fdroid-repo-common, so scripts-fdroid-repo would be a good place for this IMO.",
+      "revId": "9903158c20dad34805d4478acb59ed98a1fa7b5f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f3697449_0a38327c",
+        "filename": "check-signal.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-14T11:34:52Z",
+      "side": 1,
+      "message": "This could be shared.",
+      "revId": "9903158c20dad34805d4478acb59ed98a1fa7b5f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
