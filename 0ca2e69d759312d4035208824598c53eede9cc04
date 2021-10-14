@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "668d9cb0_0be2505d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-14T11:33:53Z",
+      "side": 1,
+      "message": "It would also be good to put this in a common scripts repo IMO.\n\nI did create \u0027scripts-fdroid-repo\u0027 for that.",
+      "revId": "0ca2e69d759312d4035208824598c53eede9cc04",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a82bc805_b7becc57",
+        "filename": "check-orbot.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-14T11:33:53Z",
+      "side": 1,
+      "message": "This could be shared.",
+      "revId": "0ca2e69d759312d4035208824598c53eede9cc04",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
