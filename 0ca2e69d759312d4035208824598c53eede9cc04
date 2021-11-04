@@ -69,6 +69,24 @@
       "parentUuid": "067c99a6_c3ea8577",
       "revId": "0ca2e69d759312d4035208824598c53eede9cc04",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8e13ed5_2f2c943a",
+        "filename": "check-orbot.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T15:40:14Z",
+      "side": 1,
+      "message": "Why put this script elsewhere if it is only used here?",
+      "parentUuid": "016ea8d6_0a0bd5ae",
+      "revId": "0ca2e69d759312d4035208824598c53eede9cc04",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
