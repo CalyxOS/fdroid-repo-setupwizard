@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "67e38073_f7f005d9",
+        "filename": "config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-04T14:36:03Z",
+      "side": 1,
+      "message": "Can we do that separately though?\n\nI just want to have the SetupWizard repo ready exactly like before so that we can ship it with minimal testing, given much won\u0027t have changed.\n\nThen we can make and test any changes we want after that incrementally.\n\nTrying to avoid doing multiple things at once.",
+      "parentUuid": "56cc2fcc_bba1f3a5",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8b28acb6_59e749ff",
         "filename": "config.yml",
         "patchSetId": 1
@@ -73,6 +91,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "28ae6653_6ca12a4f",
+        "filename": "config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-04T14:36:03Z",
+      "side": 1,
+      "message": "There is no need of that. The repository is committed to a git repo for inclusion in the OS.\n\nAnything that\u0027s shipped will have a commit on gerrit / in the repo, and have a signed tag. Avoids having to maintain anything on the server.",
+      "parentUuid": "311a33a2_279be57e",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "302eb85c_42b0982c",
         "filename": "plugins/fdroid_ersatz-update.py",
         "patchSetId": 1
@@ -102,6 +138,24 @@
       "side": 1,
       "message": "That\u0027s for getting Briar from their official repo.  They build only via the reproducible process, so that f-droid.org only ships with their signature.  If a build is not reproducible, but they deem it important enough to ship anyway, they will put it in their repo.   f-droid.org will only ship reproducible APKs.",
       "parentUuid": "302eb85c_42b0982c",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "32bd19f8_25be3841",
+        "filename": "plugins/fdroid_ersatz-update.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-04T14:36:03Z",
+      "side": 1,
+      "message": "Currently we get Briar directly from f-droid.org though, so I think for the first iteration we should only make minimal changes, and then make this change separately if needed.",
+      "parentUuid": "e913328d_5c0b7554",
       "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
