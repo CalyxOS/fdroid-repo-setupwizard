@@ -158,6 +158,24 @@
       "parentUuid": "8be62776_e5a0f580",
       "revId": "6c847751fc56165c32144fba6fc1bce620615226",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb78d3a6_d59b3399",
+        "filename": "check-signal.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T16:32:54Z",
+      "side": 1,
+      "message": "It will have to fetch the single-ABI Orbot APKs itself because the guardianproject.info repo only includes the universal binaries.  This is needed so that it fits into the size limit for gitlab/github mirrors.",
+      "parentUuid": "b3ad5738_479bdbba",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
