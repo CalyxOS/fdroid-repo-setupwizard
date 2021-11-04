@@ -33,6 +33,24 @@
       "message": "This could be shared.",
       "revId": "0ca2e69d759312d4035208824598c53eede9cc04",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "067c99a6_c3ea8577",
+        "filename": "check-orbot.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T09:35:30Z",
+      "side": 1,
+      "message": "Is there any other planned repo that should include Orbot?  I can\u0027t think of one.  It needs to be in fdroid-repo-setupwizard to be in the offline repo.  Otherwise, if the device is online, it can come from the Guardian Project repo where its currently maintained, and ultimately f-droid.org (where it really should be maintained).\n\nIn any case, I think it should be merged here until https://gitlab.com/CalyxOS/calyxos/-/issues/756 is worked out.",
+      "parentUuid": "a82bc805_b7becc57",
+      "revId": "0ca2e69d759312d4035208824598c53eede9cc04",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
