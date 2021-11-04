@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d11905de_52489142",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T10:14:21Z",
+      "side": 1,
+      "message": "This still needs some work to move the Signal metadata and APK download to fdroid-repo-common, then make this repo pull Signal from fdroid-repo-common.",
+      "revId": "a5ca4afb56bc39b964d4071b1daa65e00680c99a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}

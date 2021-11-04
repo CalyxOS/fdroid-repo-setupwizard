@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "56cc2fcc_bba1f3a5",
+        "filename": "config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T10:14:21Z",
+      "side": 1,
+      "message": "fdroidclient works much better if it gets the metadata of previous releases.  I think that this repo should include at least 2 releases per app so that the metadata is included.  Then the process that assembles the files to put into /product/fdroid/repo should only include the latest APKs.  Then it will have the metadata without having the unneeded APKs.  If you point me to that code, I can fix that too.",
+      "parentUuid": "0a53bf1e_a94b2407",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8b28acb6_59e749ff",
@@ -35,6 +53,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "311a33a2_279be57e",
+        "filename": "config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T10:14:21Z",
+      "side": 1,
+      "message": "It doesn\u0027t have to, but the archive_url field needs to have something in it.  I think it would be good to keep the archive, even if it is only kept on the publish/signing server.  That provides a \"log\" of the actual binaries that have been shipped in case there are any incidents that need investigating.",
+      "parentUuid": "8b28acb6_59e749ff",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "302eb85c_42b0982c",
@@ -48,6 +84,24 @@
       "writtenOn": "2021-10-05T12:31:33Z",
       "side": 1,
       "message": "What\u0027s this for? So far we\u0027ve got Briar directly from F-Droid.",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e913328d_5c0b7554",
+        "filename": "plugins/fdroid_ersatz-update.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T10:14:21Z",
+      "side": 1,
+      "message": "That\u0027s for getting Briar from their official repo.  They build only via the reproducible process, so that f-droid.org only ships with their signature.  If a build is not reproducible, but they deem it important enough to ship anyway, they will put it in their repo.   f-droid.org will only ship reproducible APKs.",
+      "parentUuid": "302eb85c_42b0982c",
       "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
