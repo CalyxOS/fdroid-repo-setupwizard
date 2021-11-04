@@ -51,6 +51,24 @@
       "parentUuid": "a82bc805_b7becc57",
       "revId": "0ca2e69d759312d4035208824598c53eede9cc04",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "016ea8d6_0a0bd5ae",
+        "filename": "check-orbot.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-04T14:29:54Z",
+      "side": 1,
+      "message": "No there is not, but I thought we decided on just sticking with manual management for now, assuming ../scripts-fdroid-repo exists.",
+      "parentUuid": "067c99a6_c3ea8577",
+      "revId": "0ca2e69d759312d4035208824598c53eede9cc04",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
