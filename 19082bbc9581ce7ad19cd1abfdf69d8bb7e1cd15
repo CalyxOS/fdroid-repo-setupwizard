@@ -54,6 +54,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "47a02226_e9015016",
+        "filename": "config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T15:53:35Z",
+      "side": 1,
+      "message": "Sure, I\u0027ll move that to be handled later.",
+      "parentUuid": "67e38073_f7f005d9",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8b28acb6_59e749ff",
@@ -103,6 +121,24 @@
       "side": 1,
       "message": "There is no need of that. The repository is committed to a git repo for inclusion in the OS.\n\nAnything that\u0027s shipped will have a commit on gerrit / in the repo, and have a signed tag. Avoids having to maintain anything on the server.",
       "parentUuid": "311a33a2_279be57e",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f4923c3_f66240de",
+        "filename": "config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T15:53:35Z",
+      "side": 1,
+      "message": "Nothing needs to happen with the archive that is generated on the repo signing/deploy server.  The idea here is to use `archive_older: 1` to  enforce that there is only 1 APK per app in the repo, regardless of what the automated download processes produce.  In order to set `archive_older:`, the other archive fields need to be set.\n\nHow is the generated repo committed to git?  That process should just ignore or delete the archive.",
+      "parentUuid": "28ae6653_6ca12a4f",
       "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
