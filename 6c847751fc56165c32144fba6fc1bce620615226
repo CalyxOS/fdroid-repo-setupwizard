@@ -122,6 +122,24 @@
       "parentUuid": "935e6776_4810e51a",
       "revId": "6c847751fc56165c32144fba6fc1bce620615226",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8be62776_e5a0f580",
+        "filename": "check-signal.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-04T09:57:23Z",
+      "side": 1,
+      "message": "I think the way to best share the Signal code would be to maintain the script and metadata in the fdroid-repo-common repo, then make fdroid-repo-setupwizard fetch the APKs and metadata from that repo.  That would make Signal be handled the same way as Briar in _plugins/fdroid_ersatz-update.py_.",
+      "parentUuid": "0b88249a_7b5b2158",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
