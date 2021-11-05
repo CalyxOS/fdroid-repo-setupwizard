@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9ad472ff_37517bf5",
+        "filename": "metadata/org.thoughtcrime.securesms.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-05T14:03:52Z",
+      "side": 1,
+      "message": "https://f-droid.org/en/docs/Anti-Features/#NonFreeAdd what\u0027s this one for wrt Signal?",
+      "revId": "946b074a60eeb733276ccc6ca7cd6b7ff3ff9384",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
