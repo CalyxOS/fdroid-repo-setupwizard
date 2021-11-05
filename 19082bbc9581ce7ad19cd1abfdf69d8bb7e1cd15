@@ -143,6 +143,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d25cfe3f_bfd67252",
+        "filename": "config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-05T11:35:41Z",
+      "side": 1,
+      "message": "Now: CI builds repo, zips it up. Script downloads zip, generates the makefiles (based on the filenames, given they contain version code), and commits that to git.\n\nThis / Future: I think we can do something similar - have the repo generated here zipped up and put somewhere, and then that can be downloaded by the script and deployed.\n\nNot automatically git committing since we want to keep the \u0027git repository\u0027 small and only need to update it when we want to, typically before every build.",
+      "parentUuid": "6f4923c3_f66240de",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "302eb85c_42b0982c",
