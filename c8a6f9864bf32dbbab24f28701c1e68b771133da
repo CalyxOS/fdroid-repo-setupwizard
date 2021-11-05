@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90f406b5_0a43ef34",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-05T11:36:03Z",
+      "side": 1,
+      "message": "We can move this to the \u0027fetch from common repo\u0027 setup later.",
+      "revId": "c8a6f9864bf32dbbab24f28701c1e68b771133da",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
