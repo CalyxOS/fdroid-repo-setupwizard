@@ -1,0 +1,28 @@
+#!/bin/sh
+
+set -e
+set -x
+
+cd $(dirname $0)
+
+test -d repo
+chmod 0600 config.yml
+
+. ../variables
+
+#./check-torbrowser.sh
+#./check-orbot.py
+#./check-signal.py
+
+# delete any corrupt APKs
+for f in */*.apk; do unzip -l "$f" > /dev/null || rm $f; done
+
+PYTHONPATH="`pwd`/plugins:`pwd`/../fdroidserver" \
+	  ../fdroidserver/fdroid ersatz-update --verbose --nosign --delete-unknown
+
+../fdroidserver/fdroid signindex --verbose
+
+export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
+while ! ../fdroidserver/fdroid deploy -v; do
+    sleep 5
+done
