@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# this blocks plain HTTP connections
+export http_proxy=http://localhost:55555
+
+# this makes the downloading and pushing happen over Tor
+#export https_proxy=http://localhost:8081
+#export SOCKS_SERVER=localhost:9050
+
+set -e
+set -x
+
+cd $(dirname $0)
+
+test -d repo || mkdir repo
+chmod 0600 config.yml
+
+. ../variables
+
+./check-torbrowser.sh
+./check-orbot.py
+./check-signal.py
+
+# delete any corrupt APKs and related GPG signatures
+for apk in */*.apk; do unzip -l "$apk" > /dev/null || rm -f $apk $apk.asc; done
+
+# GPG signatures aren't useful to keep in the on-device repo
+rm -f */*.apk.asc
+
+fdroidserver=$(cd ../../fdroidserver; pwd)
+fdroid=$fdroidserver/fdroid
+PYTHONPATH="`pwd`/plugins:$fdroidserver" \
+	  $fdroid ersatz-update --verbose --nosign --delete-unknown --pretty
+
+# $fdroid signindex --verbose  # TODO set up HSM
+
+export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
+while ! $fdroid deploy -v; do
+    sleep 5
+done
