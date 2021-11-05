@@ -176,6 +176,24 @@
       "parentUuid": "b3ad5738_479bdbba",
       "revId": "6c847751fc56165c32144fba6fc1bce620615226",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c924b772_470d999b",
+        "filename": "check-signal.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-05T11:37:47Z",
+      "side": 1,
+      "message": "Right, I meant just the metadata. And in general, anything in setupwizard repo should either be in the f-droid.org repo, guardianproject.info repo, or our new common repo. That way there\u0027s an update path available always.\n\nSo it sounds like in addition to Signal, we\u0027ll have the single-ABI Orbot APKs in the common repo. Only need arm64 in there for now.",
+      "parentUuid": "bb78d3a6_d59b3399",
+      "revId": "6c847751fc56165c32144fba6fc1bce620615226",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
