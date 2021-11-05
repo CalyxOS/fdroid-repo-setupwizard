@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "87d5d551_740e17ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-05T14:27:51Z",
+      "side": 1,
+      "message": "This is a script that will run the whole process if someone does the required local setup:\n* git clone https://gitlab.com/fdroid/fdroidserver.git\n* create signing key (e.g. `fdroid init`)\n* add keystore config to config.yml\n* add secrets to the env vars in ../variables\n\nThis should be merged once we have a decent idea of what the production setup will look like: https://gitlab.com/CalyxOS/calyxos/-/issues/756",
+      "revId": "0981cd2680964738fcdc1b1982bffc1366a84492",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dc322974_982e5433",
         "filename": "update",
         "patchSetId": 1
