@@ -56,6 +56,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "652e12cf_26a3ded4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-10T15:53:30Z",
+      "side": 1,
+      "message": "Looks like repo creation failed due to \u0027KeyError: \u0027repo_keyalias\u0027\u0027",
+      "parentUuid": "37b68e2f_3c4e33a8",
+      "revId": "0981cd2680964738fcdc1b1982bffc1366a84492",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dc322974_982e5433",
         "filename": "update",
         "patchSetId": 1
