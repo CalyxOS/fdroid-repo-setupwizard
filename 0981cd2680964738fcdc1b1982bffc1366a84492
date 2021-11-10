@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "37b68e2f_3c4e33a8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-10T15:50:34Z",
+      "side": 1,
+      "message": "I ran this (Ran `fdroid init` in another empty dir), and uncommented the commented out scripts.\n\nI had to comment out \u0027set -e\u0027 since some parts of the script seem to fail.\n\nExample:\nln: failed to create hard link \u0027../repo/org.torproject.torbrowser_2015808987.apk\u0027 \u003d\u003e \u0027tor-browser-10.5.10-android-aarch64-multi.apk\u0027: No such file or directory\n\n\nAlso, it\u0027s downloading things one-by-one, in the future it\u0027d be nice to parallelize. Especially all the screenshots and icons, to speed things up.\n\nFinally, `fdroid deploy -v` fails. We should set a `local_copy_dir` here since this repo isn\u0027t exactly going to be deployed.\n\nI did all of that and deployed the repo.\n\nNext I cloned `platform_prebuilts_calyx_fdroid`, `rm -rf repo` in that, and then copied over this newly generated repo.\n\nThat provides a diff: http://sprunge.us/vY1TQN\n\nSo this is not ready yet.",
+      "parentUuid": "64abdc45_b950a01e",
+      "revId": "0981cd2680964738fcdc1b1982bffc1366a84492",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dc322974_982e5433",
         "filename": "update",
         "patchSetId": 1
