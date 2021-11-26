@@ -35,7 +35,10 @@ if [ "`curl --silent https://check.torproject.org/api/ip | jq .IsTor`" != "true"
     #exit 1  TODO REMOVE ME
 fi
 
-cd $(dirname $0)/tmp
+tmp=$(dirname $0)/tmp
+test -d $tmp || mkdir $tmp
+cd $tmp
+
 for version in `curl --silent https://dist.torproject.org/torbrowser/ | sed -En 's,.*>([0-9]+\.[0-9.]+)/?<.*,\1,p' | sort --reverse`
 do
     arch=aarch64
