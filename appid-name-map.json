@@ -1,0 +1,22 @@
+{
+    "app.organicmaps": "OrganicMaps",
+    "at.bitfire.davdroid": "DAVx5",
+    "com.artifex.mupdf.viewer.app": "MuPDFviewer",
+    "com.aurora.store": "AuroraStore",
+    "com.duckduckgo.mobile.android": "DuckDuckGoPrivacyBrowser",
+    "com.fsck.k9": "K-9Mail",
+    "com.jarsilio.android.scrambledeggsif": "ScrambledExif",
+    "com.nextcloud.client": "Nextcloud",
+    "com.yubico.yubioath": "YubicoAuthenticator",
+    "info.guardianproject.locationprivacy": "LocationPrivacy",
+    "org.briarproject.briar.android": "Briar",
+    "org.calyxinstitute.vpn": "CalyxVPN",
+    "org.dmfs.tasks": "Tasks",
+    "org.openobservatory.ooniprobe": "OONIProbe",
+    "org.secuso.privacyfriendlyweather": "Weather",
+    "org.sufficientlysecure.keychain": "OpenKeychain",
+    "org.thoughtcrime.securesms": "Signal",
+    "org.torproject.android": "Orbot",
+    "org.torproject.torbrowser": "TorBrowser",
+    "se.leap.riseupvpn": "RiseupVPN"
+}

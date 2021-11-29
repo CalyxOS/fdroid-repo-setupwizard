@@ -14,9 +14,11 @@
 # repo add Categories and AntiFeatures while still keeping the
 # upstream ones.
 
+import glob
 import json
 import os
 import sys
+from androguard.core.bytecodes.apk import get_apkid
 from datetime import datetime
 from fdroidserver import index, metadata, mirror, net, update
 from urllib.parse import urlsplit, urlunsplit
@@ -192,6 +194,15 @@ def read_metadata_ersatz():
 
     mirror.options = update.options
     mirror._run_wget('repo', urls)
+
+    # hack until the unique ID scheme for apps is worked out in platform_prebuilts_calyx_fdroid/Android.mk
+    with open('appid-name-map.json') as fp:
+        names = json.load(fp)
+    for f in glob.glob('repo/*.apk'):
+        appid, versionCode, versionName = get_apkid(f)
+        newname = os.path.join(os.path.dirname(f), names[appid] + '.apk')
+        if f != newname:
+            os.rename(f, newname)
 
     return apps
 
