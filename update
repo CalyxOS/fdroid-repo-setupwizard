@@ -17,6 +17,9 @@ chmod 0600 config.yml
 
 . ../variables
 
+# temp hack as long as the APKs must use the names from platform_prebuilts_calyx_fdroid/Android.mk
+rm -f */*.apk */*.apk.asc
+
 ./check-torbrowser.sh
 ./check-orbot.py
 ./check-signal.py
