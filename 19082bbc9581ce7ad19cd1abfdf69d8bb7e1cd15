@@ -212,6 +212,24 @@
       "parentUuid": "e913328d_5c0b7554",
       "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e298d35a_79c9a4bc",
+        "filename": "plugins/fdroid_ersatz-update.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-29T14:44:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "32bd19f8_25be3841",
+      "revId": "19082bbc9581ce7ad19cd1abfdf69d8bb7e1cd15",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
