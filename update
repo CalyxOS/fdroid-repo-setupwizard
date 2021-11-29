@@ -41,3 +41,7 @@ export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
 while ! $fdroid deploy -v; do
     sleep 5
 done
+
+generate=`pwd`/generate-platform_prebuilts_calyx_fdroid-makefiles.py
+cd $(grep -Eo 'serverwebroot:.*' config.yml | awk '{print $2}')
+$generate
