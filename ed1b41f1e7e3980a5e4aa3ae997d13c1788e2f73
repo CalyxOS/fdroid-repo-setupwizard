@@ -16,6 +16,24 @@
       "message": "Thanks!\n\nDo you have a repo diff with this included? I guess just a `git diff --stat` and `git diff repo/indes-v1.json` would do.",
       "revId": "ed1b41f1e7e3980a5e4aa3ae997d13c1788e2f73",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5630c5b0_f4b53391",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-11-30T23:08:56Z",
+      "side": 1,
+      "message": "https://review.calyxos.org/c/CalyxOS/platform_prebuilts_calyx_fdroid/+/6910",
+      "parentUuid": "06a2438e_0441d583",
+      "revId": "ed1b41f1e7e3980a5e4aa3ae997d13c1788e2f73",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
