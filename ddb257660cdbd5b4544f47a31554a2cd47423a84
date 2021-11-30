@@ -16,6 +16,23 @@
       "message": "Ok great, this way we can directly have this zip/tar up the output and serve it somewhere.",
       "revId": "ddb257660cdbd5b4544f47a31554a2cd47423a84",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4e3c6b2_8b8f7320",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-30T09:36:39Z",
+      "side": 1,
+      "message": "Also this shouldn\u0027t have the repo name in the script like that - How about generate-android-makefiles or generate-fdroid-repo-makefiles.py or something like that",
+      "revId": "ddb257660cdbd5b4544f47a31554a2cd47423a84",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
