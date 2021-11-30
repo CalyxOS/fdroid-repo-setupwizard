@@ -206,6 +206,16 @@ def read_metadata_ersatz():
         if f != newname:
             os.rename(f, newname)
 
+    # hack until the generated Makefiles are properly quoted
+    for f in glob.glob('repo/*/*/*/icon_*.png') + glob.glob('repo/*/*/*/featureGraphic_*.png'):
+        if os.path.basename(f).startswith('icon_'):
+            new = os.path.join(os.path.dirname(f), 'icon.png')
+        else:
+            new = os.path.join(os.path.dirname(f), 'featureGraphic.png')
+        if os.path.exists(new):
+            os.remove(new)
+        os.link(f, new)
+
     return apps
 
 
