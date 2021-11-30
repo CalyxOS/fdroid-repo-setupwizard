@@ -20,7 +20,7 @@ import os
 import sys
 from androguard.core.bytecodes.apk import get_apkid
 from datetime import datetime
-from fdroidserver import index, metadata, mirror, net, update
+from fdroidserver import common, index, metadata, mirror, net, update
 from urllib.parse import urlsplit, urlunsplit
 
 fdroid_summary = 'download all updates from repos, then run `fdroid update`'
@@ -34,6 +34,8 @@ SOURCE_REPOS = [
 
 
 def get_cache():
+    if not os.path.exists('tmp'):
+        os.mkdir('tmp')
     cache_file = os.path.join('tmp', os.path.basename(__file__) + '-cache.json')
     cache = None
     if os.path.exists(cache_file):
@@ -207,10 +209,44 @@ def read_metadata_ersatz():
     return apps
 
 
+def sha256base64_ersatz(filename):
+    return real_sha256base64(filename).replace('=', '')
+
+
+def prepare_apps_ersatz(apps, apks, repodir):
+    apps_with_packages = real_prepare_apps(apps, apks, repodir)
+
+    if update.config.get('ersatz-only-icons'):
+        # hack until the generated Makefiles can be properly quoted
+        for f in glob.glob('repo/*/*/icon_*.png'):
+            new = f.replace('=', '')
+            if f != new:
+                if os.path.exists(new):
+                    os.remove(new)
+                os.rename(f, new)
+
+        for app in apps_with_packages.values():
+            icon = app.get('Icon')
+            if icon and icon.startswith('icon_'):
+                app['Icon'] = icon.replace('=', '')
+            for locale in app.get('Localized', {}).values():
+                if 'icon' in locale and locale['icon'].startswith('icon_'):
+                    locale['icon'] = locale['icon'].replace('=', '')
+
+    return apps_with_packages
+
+
 def main():
-    global real_read_metadata
+    global real_read_metadata, real_prepare_apps, real_sha256base64
+
     real_read_metadata = metadata.read_metadata
     metadata.read_metadata = read_metadata_ersatz
+
+    real_sha256base64 = common.sha256base64
+    common.sha256base64 = sha256base64_ersatz
+
+    real_prepare_apps = update.prepare_apps
+    update.prepare_apps = prepare_apps_ersatz
 
     # fake that `fdroid update` was run
     sys.argv = [sys.argv[0].split(' ')[0] + ' update'] + sys.argv[1:]
