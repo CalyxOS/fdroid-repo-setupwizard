@@ -83,6 +83,8 @@ def download_graphics(repourl, app):
             dirpath = None
             dlurl = None
             if k in ('icon', 'featureGraphic'):
+                if k == 'featureGraphic' and update.config.get('ersatz-only-icons'):
+                    continue
                 dirpath = os.path.join(
                     app['packageName'], locale, k + v[v.rindex('.') :]
                 )
@@ -101,6 +103,8 @@ def download_graphics(repourl, app):
                     os.makedirs(os.path.dirname(dlpath), exist_ok=True)
                     net.download_file(dlurl, dlpath)
             elif k.endswith('Screenshots'):
+                if update.config.get('ersatz-only-icons'):
+                    continue
                 for f in v:
                     dirpath = os.path.join(app['packageName'], locale, k, f)
                     dlpath = os.path.join('repo', dirpath)
