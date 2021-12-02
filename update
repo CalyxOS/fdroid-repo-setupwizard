@@ -37,11 +37,17 @@ PYTHONPATH="`pwd`/plugins:$fdroidserver" \
 
 # $fdroid signindex --verbose  # TODO set up HSM
 
-export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
+target=$(grep -Eo 'serverwebroot:.*' config.yml | awk '{print $2}')
+git -C $target clean -fdx
+git -C $target reset --hard origin/android12
+
 while ! $fdroid deploy -v; do
     sleep 5
 done
 
 generate=`pwd`/generate-fdroid-repo-makefiles.py
-cd $(grep -Eo 'serverwebroot:.*' config.yml | awk '{print $2}')
+cd $target
 $generate
+
+git -C $target add .
+git -C $target commit -a -m "$0"
