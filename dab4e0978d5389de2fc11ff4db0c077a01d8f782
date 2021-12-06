@@ -16,6 +16,24 @@
       "message": "It\u0027d be good to include $(date) or something here.",
       "revId": "dab4e0978d5389de2fc11ff4db0c077a01d8f782",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "640c371b_cee4f2b6",
+        "filename": "update",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2021-12-06T13:53:56Z",
+      "side": 1,
+      "message": "Wouldn\u0027t the date be redundant?  It is automatically included for every git commit.  I couldn\u0027t think of anything else that should go there.",
+      "parentUuid": "49285bcb_93865e91",
+      "revId": "dab4e0978d5389de2fc11ff4db0c077a01d8f782",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
