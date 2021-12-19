@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0cd8a01_b5cb631f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-12-19T22:28:33Z",
+      "side": 1,
+      "message": "https://review.calyxos.org/q/topic:uses-library",
+      "revId": "ee53e78f61994df91bf0b38eadd3398c10ab58ea",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf440d3f_9797d743",
+        "filename": "generate-fdroid-repo-makefiles.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-12-19T22:28:33Z",
+      "side": 1,
+      "message": "Need to add\n`LOCAL_ENFORCE_USES_LIBRARIES :\u003d false`\nbelow this.",
+      "revId": "ee53e78f61994df91bf0b38eadd3398c10ab58ea",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
