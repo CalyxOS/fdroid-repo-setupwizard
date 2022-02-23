@@ -33,6 +33,24 @@
       "message": "Need to add\n`LOCAL_ENFORCE_USES_LIBRARIES :\u003d false`\nbelow this.",
       "revId": "ee53e78f61994df91bf0b38eadd3398c10ab58ea",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78e91401_21297d17",
+        "filename": "generate-fdroid-repo-makefiles.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2022-02-23T16:39:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "bf440d3f_9797d743",
+      "revId": "ee53e78f61994df91bf0b38eadd3398c10ab58ea",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
