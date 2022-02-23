@@ -16,6 +16,24 @@
       "message": "Instead of this, we can use image https://gitlab.com/CalyxOS/ci-images-fdroid-repo\n\nThat way it avoids running apt upgrade every single run, which takes up some time.",
       "revId": "eb93d70297258c0c157dcdcefbac74268d3776cb",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee8aed6f_00229901",
+        "filename": ".gitlab-ci.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000021
+      },
+      "writtenOn": "2022-02-23T16:42:28Z",
+      "side": 1,
+      "message": "This job runs in a minute, I don\u0027t see optimizing it bringing much.  And in my experience, it is much lower maintenance to avoid using custom images.",
+      "parentUuid": "b9e94602_68515ffb",
+      "revId": "eb93d70297258c0c157dcdcefbac74268d3776cb",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
