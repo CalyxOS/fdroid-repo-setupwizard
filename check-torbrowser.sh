@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -x
 #
 # Find available versions of Tor Browser Android and download/verify
 # any newer releases that are not present in this repo.  This script
@@ -32,8 +32,10 @@ SOCKS_SERVER=locahost:9050
 
 if [ "`curl --silent https://check.torproject.org/api/ip | jq .IsTor`" != "true" ]; then
     echo ERROR not running over tor!
-    #exit 1  TODO REMOVE ME
+    exit 1
 fi
+
+gpg --recv-keys EF6E286DDA85EA2A4BA7DE684E2C6E8793298290
 
 tmp=$(dirname $0)/tmp
 test -d $tmp || mkdir $tmp
